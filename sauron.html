@@ -8,40 +8,22 @@
 
     <link rel="stylesheet" href="https://andybrewer.github.io/mvp/mvp.css">
 
+    <link rel="stylesheet" href="third-party/simpleLightbox.css">
+    
+    <script src="third-party/jquery-3.5.1.js"></script>
+    <script src="third-party/simpleLightbox.js"></script>
+    <script src="javascript/utils.js"></script>
+
     <title>Sauron</title>
 </head>
 
 <body>
-    <section>
-        <header>
-            <h1>Sauron</h1>
-        </header>
-    </section>
-    <section>
-        <aside>
-            <img src="images/Sauron/1.JPG" width="720px" />
-        </aside>
-        <aside>
-            <img src="images/Sauron/2.JPG" width="720px" />
-        </aside>
-    </section>
-    <section >
-        <aside>
-            <img src="images/Sauron/3.JPG" width="720px" />
-        </aside>
-        <aside>
-            <img src="images/Sauron/4.JPG" width="720px" />
-        </aside>
-    </section>
-    <section >
-        <aside>
-            <img src="images/Sauron/5.JPG" width="720px" />
-        </aside>
-        <aside>
-            <img src="images/Sauron/6.JPG" width="720px" />
-        </aside>
-    </section>
-
+    <div id="photos"></div>
 </body>
+
+<script>
+    createImagePage($("#photos"), "Sauron", 6)
+    new SimpleLightbox({elements: 'a'});
+</script>
 
 </html>
